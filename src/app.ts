@@ -7,10 +7,10 @@ export function makeApp() {
     app.use(express.json({ limit: '150mb' }));
     app.use(cors());
     // Rutas
-    // app.use("/users", userRoute);
-    // app.use("/categories", categoryRoute);
-    // app.use("/products", productRouote);
-    // app.use("/restart", restartRoute);
+    // app.use("/orders", ordersRoute);
+    // app.use("/order/:id", ordersIdRoute);
+    // app.use("/orders/:id/cancel", cancelRouote);
+    // app.use("/orders?status", statusRoute);
     return app;
 }
 
